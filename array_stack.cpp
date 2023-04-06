@@ -52,19 +52,19 @@ void display(int stack[]){                  //Prints elements from top to bottom
     if (isEmpty(*stack)){
         cout<<"Stack is empty.";
     } else {
-      for(int i=top; i>0; i--){            // to get correct answer, we should remove =
+      for(int i=top; i>0; i--){            
         cout<<stack[i]<<" ";
       }  cout<<endl;
     } 
 }
 
 int main(){
-    cout << "Enter array size - ";
+    cout << "Enter array size - ";                      //We can give array size here.
     int s;
     cin >> s;
     
-    int stk[s];                        //We can change array size here.
-
+    int stk[s];                        
+    
     clock_t tStart = clock();
 
     push(stk,8);
